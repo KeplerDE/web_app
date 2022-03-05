@@ -1,0 +1,15 @@
+ - pip install django
+ - django-admin startproject core
+ - python manage.py startapp store
+ - python manage.py makemigrations                ( SQL app DB Navigator)
+ - python -m pip install Pillow
+ - python manage.py migrate
+ - python manage.py test
+ - pip install coverage
+ - coverage run manage.py test
+ - coverage report
+ - coverage html
+
+
+
+
