@@ -27,7 +27,7 @@ class Basket():
         else:
             self.basket[product_id] = {'price': str(product.price), 'qty': qty}
 
-        self.save()
+            self.save()
 
     def __iter__(self):
         """
