@@ -9,6 +9,7 @@
  - coverage run manage.py test
  - coverage report
  - coverage html
+- pip install flake8
 
 
 
