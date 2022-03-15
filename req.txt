@@ -11,6 +11,7 @@
  - coverage html
 - pip install flake8
 - pip install django-countries
+- pip install six
 
 
 
