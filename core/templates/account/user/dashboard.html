@@ -1,6 +1,4 @@
-{% extends "../../store/base.html" %}
-{% load static %} {% block title %}Basket Summary{% endblock %}
-{% block content %}
+{% extends "../../store/base.html" %} {% load static %} {% block title %}Basket Summary{%endblock %} {% block content %}
 
 <main class="pt-5">
   <div class="container" style="max-width: 1000px">
@@ -14,7 +12,7 @@
     <hr />
   </div>
   <div class="container" style="max-width: 1000px">
-    {% for order in orders %}
+
     <div class="row g-3">
       
       <div class="col-12 bg-light p-3 d-flex justify-content-between">
@@ -75,7 +73,7 @@
       </div>
 
     </div>
-    {% endfor %}
+
 
   </div>
 </main>
