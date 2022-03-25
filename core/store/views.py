@@ -4,7 +4,7 @@ from .models import Category, Product
 
 
 def product_all(request):
-    products = Product.objects.all()
+    products = Product.objects .all()
     return render(request, 'store/index.html', {'products': products})  # .objects.filter(is_active=True)
 
 
@@ -15,5 +15,5 @@ def category_list(request, category_slug=None):
 
 
 def product_detail(request, slug):
-    product = get_object_or_404(Product, slug=slug, in_stock=True)
+    product = get_object_or_404(Product, slug=slug, is_active=True)
     return render(request, 'store/single.html', {'product': product})
