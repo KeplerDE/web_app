@@ -150,7 +150,7 @@ STRIPE_SECRET_KEY = 'sk_test_51KeLyvEmupmwZTVvITKhjUhX5amGbi8qzTcRxRY4FmaNryl3Ub
 # stripe listen --forward-to localhost:8000/payment/webhook/
 
 # Custom dashboard model
-AUTH_USER_MODEL = 'account.UserBase'
+AUTH_USER_MODEL = 'account.Customer'
 LOGIN_REDIRECT_URL = '/account/dashboard'
 LOGIN_URL = '/account/login/'
 
