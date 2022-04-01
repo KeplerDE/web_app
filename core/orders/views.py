@@ -5,7 +5,6 @@ from basket.basket import Basket
 
 from .models import Order, OrderItem
 
-
 def add(request):
     basket = Basket(request)
     if request.POST.get('action') == 'post':
