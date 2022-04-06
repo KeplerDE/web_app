@@ -42,10 +42,9 @@ INSTALLED_APPS = [
     'store',
     'basket',
     'account',
-    'payment',
     'orders',
     'mptt',
-
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -144,10 +143,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Basket session ID
 BASKET_SESSION_ID = 'basket'
 
-# Stripe Payment
-os.environ.setdefault('STRIPE_PUBLISHABLE_KEY', 'pk_test_51KeLyvEmupmwZTVvZ2IzeqslAuZlPUe4OKUT34l8MAHhUHK3IhLJzonNBOMg3QAYs6Sz3lXaLuaAe5JdgUKFilTa00kiZBBGGN')
-STRIPE_SECRET_KEY = 'sk_test_51KeLyvEmupmwZTVvITKhjUhX5amGbi8qzTcRxRY4FmaNryl3UbQ9AyqUF1jN7SohV4x6LKnaJvJK8vxb87ftmsMX00JrezfGEG'
-# stripe listen --forward-to localhost:8000/payment/webhook/
 
 # Custom dashboard model
 AUTH_USER_MODEL = 'account.Customer'
